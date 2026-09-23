@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIDENFILES.GOV | Season 2 VIP Lounge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>🎉 SEASON 2 IS HERE</span>
+      <span>LET'S GOOOOO!!!</span>
+      <span>🎊 AIDEN FILES: PARTY EDITION</span>
+      <span>CLEARANCE LEVEL: HYPE</span>
+      <span>🕺 CONFETTI PROTOCOL ACTIVATED</span>
+      <span>NO FUN ALLOWED? REQUEST DENIED.</span>
+      <span>🎉 SEASON 2 IS HERE</span>
+      <span>LET'S GOOOOO!!!</span>
+      <span>🎊 AIDEN FILES: PARTY EDITION</span>
+      <span>CLEARANCE LEVEL: HYPE</span>
+      <span>🕺 CONFETTI PROTOCOL ACTIVATED</span>
+      <span>NO FUN ALLOWED? REQUEST DENIED.</span>
+    </div>
+  </div>
+
+  <div class="gov-banner">
+    <p>🎂 An official celebration portal of the <strong>Aiden Files Network</strong> &bull; SEASON 2 EDITION 🎂</p>
+  </div>
+
+  <header class="main-header">
+    <div class="header-content">
+      <div class="agency-title">
+        <span class="agency-seal">🛡️</span>
+        <div>
+          <h1>AIDENFILES.GOV</h1>
+          <p class="subtitle">Official Central Repository &amp; Party Archive</p>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="archives.html">Archives</a>
+        <a href="classified.html">Classified</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero" style="border-top: 4px solid #e31c3d; text-align: center; padding: 40px;">
+      <span class="badge restricted" style="font-size: 0.9rem; padding: 5px 12px; margin-bottom: 15px;">TOP SECRET / NOFORN / PARTY</span>
+      <h2>Security Clearance Required</h2>
+      <p style="margin-top: 15px; color: #555;">
+        You are attempting to access the <strong>Season 2 VIP Lounge</strong> of the AIDENFILES.GOV repository.
+      </p>
+
+      <div id="gate" class="gate-box" style="margin-top: 25px;">
+        <label for="passcode">Enter Access Passcode:</label>
+        <input type="password" id="passcode" placeholder="••••••••" autocomplete="off">
+        <button onclick="checkPass()" class="btn" style="width: 100%; cursor: pointer;">🎉 Authenticate</button>
+        <p style="font-size: 0.75rem; color: #888; margin-top: 10px;">Hint: The name of the season. All caps, no spaces.</p>
+      </div>
+
+      <p style="font-size: 0.8rem; color: #888; margin-top: 20px;">
+        WARNING: Unauthorized access attempts are monitored and logged. And also judged.
+      </p>
+    </section>
+
+    <section id="vip-lounge" class="vip-lounge hidden">
+      <span class="badge party" style="font-size: 0.9rem; padding: 5px 12px;">ACCESS GRANTED</span>
+      <h3>🎉 WELCOME TO THE VIP LOUNGE 🎉</h3>
+      <p>
+        You made it. The confetti is real. The vibes are immaculate.
+      </p>
+      <p style="margin-top: 15px;">
+        <strong>SEASON 2 IS OFFICIALLY THE GREATEST THING TO EVER HAPPEN TO THIS ARCHIVE.</strong>
+      </p>
+      <div class="cta-row" style="margin-top: 25px;">
+        <button class="btn btn-pop" type="button" data-confetti="400">🎊 MEGA CONFETTI</button>
+        <a href="archives.html" class="btn">📁 Back to Archives</a>
+      </div>
+
+      <!-- RICKROLL -->
+      <div class="rickroll-box">
+        <span class="badge restricted" style="font-size: 0.8rem;">ULTRA CLASSIFIED</span>
+        <h4>🚨 Classified File #002: DO NOT OPEN 🚨</h4>
+        <p>This file contains footage deemed too powerful for public release. Open at your own risk.</p>
+        <button class="btn btn-pop" type="button" onclick="rickroll()">⚠️ OPEN FILE ⚠️</button>
+        <div id="rickroll-embed" class="hidden"></div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p><strong>AIDENFILES.GOV</strong> &bull; Official Agency Repository &bull; SEASON 2 PARTY EDITION</p>
+    <p class="disclaimer">This is a parody fan site made with full consent. Not a real government agency. Obviously.</p>
+  </footer>
+
+  <div id="confetti-layer" aria-hidden="true"></div>
+  <script src="party.js"></script>
+</body>
+</html>
